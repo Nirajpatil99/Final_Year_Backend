@@ -1,0 +1,2 @@
+CREATE TABLE accounts(id int primary key AUTO_INCREMENT NOT NULL,firstname varchar(30),lastname varchar(30), username varchar(30),password varchar(60),email varchar(30),dob DATE);
+CREATE TABLE forgotpassword(id int primary key AUTO_INCREMENT NOT NULL,userid int References accounts(id), uniqueid varchar(30));
